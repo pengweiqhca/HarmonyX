@@ -11,13 +11,11 @@
 		<Authors>Andreas Pardeike, Geoffrey Horsington, ManlyMarco et al.</Authors>
 		<AssemblyName>0Harmony</AssemblyName>
 		<SignAssembly>true</SignAssembly>
-		<Version>2.6.1</Version>
+		<Version>2.6.2</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/BepInEx/HarmonyX</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageTags>Harmony,Mono,Patch,Patching,Runtime,Detour,Detours,Aspect,Aspects</PackageTags>
-		<AssemblyVersion>2.6.1.0</AssemblyVersion>
-		<FileVersion>2.6.1.0</FileVersion>
 		<PackageIcon>logo_mini.png</PackageIcon>
 		<PackageIconUrl>https://raw.githubusercontent.com/BepInEx/HarmonyX/master/logo_mini.png</PackageIconUrl>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -67,7 +65,7 @@
 	<ItemGroup>
 		<!-- Reference assemblies are needed for non-Windows .NET Framework targeting builds. -->
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
-		
+
 		<!-- Reference MonoMod.RuntimeDetour for our detour needs -->
 		<PackageReference Include="MonoMod.RuntimeDetour" Version="21.11.1.1" />
 

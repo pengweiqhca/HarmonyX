@@ -146,7 +146,7 @@ namespace HarmonyLib.Internal.Patching
 				var tryStart = instructions[body.Instructions.IndexOf(exception.TryStart)].Instruction;
 				var tryEnd = instructions[body.Instructions.IndexOf(exception.TryEnd)].Instruction;
 				var handlerStart = instructions[body.Instructions.IndexOf(exception.HandlerStart)].Instruction;
-				var handlerEnd = instructions[body.Instructions.IndexOf(exception.HandlerEnd.Previous)].Instruction;
+				var handlerEnd = instructions[exception.HandlerEnd == null ? instructions.Count - 1 : body.Instructions.IndexOf(exception.HandlerEnd.Previous)].Instruction;
 
 				tryStart.blocks.Add(new ExceptionBlock(ExceptionBlockType.BeginExceptionBlock));
 				handlerEnd.blocks.Add(new ExceptionBlock(ExceptionBlockType.EndExceptionBlock));
